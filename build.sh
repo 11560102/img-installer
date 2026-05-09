@@ -54,6 +54,6 @@ docker run --privileged --rm \
   -v $(pwd)/output:/output \
   -v $(pwd)/supportFiles:/supportFiles:ro \
   -v $(pwd)/armbian/armbian.img:/mnt/armbian.img \
-  debian:buster bash -c "apt update && apt install -y xz-utils && /supportFiles/build.sh"
+  debian:bullseye bash -c "apt update && apt install -y xz-utils && /supportFiles/build.sh"
 
 echo "构建完成! ISO 文件在 output/ 目录"
